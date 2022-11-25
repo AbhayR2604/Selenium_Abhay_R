@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="WindowsChrome(failed)">
+    <parameter name="osVersion " value="10"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="browserVersion" value="105"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="Day5Test.SeleniumGridDemo">
+        <methods>
+          <include name="mytest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day5Test.SeleniumGridDemo -->
+    </classes>
+  </test> <!-- WindowsChrome(failed) -->
+  <test thread-count="5" parallel="tests" name="MacFirefox(failed)">
+    <parameter name="osVersion " value="Ventura"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="browserVersion" value="100"/>
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="Day5Test.SeleniumGridDemo">
+        <methods>
+          <include name="mytest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day5Test.SeleniumGridDemo -->
+    </classes>
+  </test> <!-- MacFirefox(failed) -->
+  <test thread-count="5" parallel="tests" name="WindowsFirefox(failed)">
+    <parameter name="osVersion " value="10"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="Day5Test.SeleniumGridDemo">
+        <methods>
+          <include name="mytest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day5Test.SeleniumGridDemo -->
+    </classes>
+  </test> <!-- WindowsFirefox(failed) -->
+  <test thread-count="5" parallel="tests" name="MacChrome(failed)">
+    <parameter name="osVersion " value="Ventura"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="browserVersion" value="102"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="Day5Test.SeleniumGridDemo">
+        <methods>
+          <include name="mytest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day5Test.SeleniumGridDemo -->
+    </classes>
+  </test> <!-- MacChrome(failed) -->
+  <test thread-count="5" parallel="tests" name="WindowsEdge(failed)">
+    <parameter name="osVersion " value="10"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="Day5Test.SeleniumGridDemo">
+        <methods>
+          <include name="mytest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day5Test.SeleniumGridDemo -->
+    </classes>
+  </test> <!-- WindowsEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->

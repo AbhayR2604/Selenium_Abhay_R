@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">51,000</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Day3Test.CrossBrowserTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1669197835646</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">Day4Test.ArrayTest</td><td><a href="#m1">myTest</a></td><td rowspan="1">1669197881360</td><td rowspan="1">5246</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Day3Test.LoginTest</td><td><a href="#m2">ForgotPassword</a></td><td rowspan="1">1669197841617</td><td rowspan="1">794</td></tr><tr class="passedeven"><td><a href="#m3">InvalidPassword</a></td><td rowspan="1">1669197846255</td><td rowspan="1">1006</td></tr><tr class="passedeven"><td><a href="#m4">Noentry</a></td><td rowspan="1">1669197851012</td><td rowspan="1">87</td></tr><tr class="passedeven"><td><a href="#m5">ValidCredentials</a></td><td rowspan="1">1669197854723</td><td rowspan="1">3512</td></tr><tr class="passedodd"><td rowspan="4">Day3Test.MyFirstTestNGTest</td><td><a href="#m6">createAccount</a></td><td rowspan="1">1669197858426</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m7">deleteAccount</a></td><td rowspan="1">1669197858427</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m8">login</a></td><td rowspan="1">1669197858425</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m9">logout</a></td><td rowspan="1">1669197858427</td><td rowspan="1">0</td></tr><tr class="passedeven"><td rowspan="3">Day4Test.ArrayTest</td><td><a href="#m10">myTest</a></td><td rowspan="3">1669197874250</td><td rowspan="3">5281</td></tr><tr class="passedeven"><td><a href="#m11">myTest</a></td></tr><tr class="passedeven"><td><a href="#m12">myTest</a></td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">Day3Test.CrossBrowserTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method loginTest but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Day4Test.ArrayTest#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samplemukesh2@gmail.com</td><td>hello</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Sign out&apos;)]&quot;}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecd25998f3249445dd3d422907e6aaab, findElement {using=xpath, value=//button[contains(text(),&apos;Sign out&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abhr3\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61784/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ecd25998f3249445dd3d422907e6aaab
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Day4Test.ArrayTest.myTest(ArrayTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Day3Test.LoginTest#ForgotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Day3Test.LoginTest#InvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Day3Test.LoginTest#Noentry</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Day3Test.LoginTest#ValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Day3Test.MyFirstTestNGTest#createAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Day3Test.MyFirstTestNGTest#deleteAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Day3Test.MyFirstTestNGTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Day3Test.MyFirstTestNGTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Day4Test.ArrayTest#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samplemukesh1@gmail.com</td><td>Mukesh1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Day4Test.ArrayTest#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sample9@gmail.com</td><td>Mukesh1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Day4Test.ArrayTest#myTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samplemukesh@gmail.com</td><td>Mukesh1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
